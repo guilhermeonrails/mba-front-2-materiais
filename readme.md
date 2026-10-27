@@ -24,9 +24,6 @@ Pré-requisitos: um navegador atual (Chrome, Firefox, Safari ou Edge) e o VS Cod
 aula-2-javascript/
 ├── referencial/        projetos finais completos (index.html, style.css, script.js)
 ├── src/                onde os alunos codam (index.html e style.css prontos; script.js criado na aula)
-├── aula-2-javascript-professor.pptx   slides com notas do professor
-├── aula-2-javascript-alunos.pptx      os mesmos slides, sem notas
-├── roteiro-professor.html
 └── readme.md
 ```
 
