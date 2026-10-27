@@ -1,0 +1,103 @@
+:root {
+    --fundo: #f8fafc;
+    --superficie: #ffffff;
+    --texto: #1e293b;
+    --texto-suave: #64748b;
+    --destaque: #0ea5e9;
+    --borda: #e2e8f0;
+}
+
+body.escuro {
+    --fundo: #0f172a;
+    --superficie: #1e293b;
+    --texto: #f1f5f9;
+    --texto-suave: #94a3b8;
+    --destaque: #38bdf8;
+    --borda: #334155;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    background: var(--superficie);
+    border-bottom: 1px solid var(--borda);
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.topo h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--destaque);
+}
+
+.btn-tema {
+    padding: 10px 16px;
+    border: 1px solid var(--borda);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--texto);
+    font: inherit;
+    cursor: pointer;
+}
+
+.btn-tema:hover {
+    border-color: var(--destaque);
+}
+
+.conteudo {
+    width: min(92%, 720px);
+    margin: 32px auto;
+    display: grid;
+    gap: 18px;
+}
+
+.card {
+    padding: 24px;
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.card h2 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    margin: 0 0 12px;
+    color: var(--texto-suave);
+    line-height: 1.6;
+}
+
+.detalhes {
+    display: none;
+}
+
+.card.aberto .detalhes {
+    display: block;
+}
+
+.ler-mais {
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--destaque);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
